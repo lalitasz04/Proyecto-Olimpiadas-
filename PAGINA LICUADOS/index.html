@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="java.js"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Encuentro</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="./imagenes/logo.png" class="logo"></a>
+            <div class="toggleMenu" onclick="menuToggle()"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>That's What <br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum, voluptatem, nam dolore laudantium quidem sunt harum quae, magnam nobis reiciendis totam adipisci eligendi labore minima distinctio delectus in! Pariatur.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgbox">
+                <img src="./imagenes/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imagenes/pepsi001.png" onclick="imgSlider('./imagenes/pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="./imagenes/pepsi002.png" onclick="imgSlider('./imagenes/pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="./imagenes/pepsi003.png" onclick="imgSlider('./imagenes/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./imagenes/facebook.png"></a></li>
+            <li><a href="#"><img src="./imagenes/instagram.png"></a></li>
+            <li><a href="#"><img src="./imagenes/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            toggleMenu.classList.toggle('active');
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <div class="votar">
+        <h1>Participa de nuestra votacion <br><span>Vota el que mas te guste </span></h1>
+    </div>
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <h2>Pepsi Cola</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magni eos quosaks kaksoqwek qoek qqoke qoke oqkeoqkeovqkoe kqoe kqoek okwdow keowke owk owkeo wkeo wkeowkewoekwo kewoek wokewokeowk ewoek owke owkeowkeowkeowk oewk eowke owkeowkeowkeowke owkeo wkeowkeo wkeo kwoek woekwoke owke ow.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <img src="./imagenes/pepsi002.png">
+    </div>
+    
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <h2>Coca-Cola</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod eget felis ac ullamcorper. Nullam at lorem vitae justo convallis tristique.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <img src="./imagenes/pepsi001.png">
+    </div>
+    
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <h2>Mountain Dew</h2>
+            <p>Mountain Dew is a citrus-flavored carbonated soft drink brand produced and owned by PepsiCo.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <img src="./imagenes/pepsi003.png">
+    </div>
+    
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <h2>Sprite</h2>
+            <p>Sprite is a colorless, lemon-lime flavored, caffeine-free soft drink, created by the Coca-Cola Company.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <img src="./imagenes/pepsi001.png">
+    </div>
+    
+    <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+            <h2>Fanta</h2>
+            <p>Fanta is a brand of fruit-flavored carbonated soft drinks created by the Coca-Cola Company.</p>
+            <a href="#">Buy Now</a>
+        </div>
+        <img src="./imagenes/pepsi002.png
+">
+    </div>
+</body>
+</html>
